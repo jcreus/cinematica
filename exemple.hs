@@ -11,4 +11,9 @@ mobil2 t
 	| (t >= 5) && (t <= 15) = mru 14.5 10 5
 	| t > 15 = mrua 114.5 10 (-6) 15
 
-main = do xtplot [mobil1, mobil2] 0 18 "out.png"
+xt1 = xt mobil1
+
+main = do
+		xtplot [mobil1, mobil2] 0 18 "out.png"
+		print $ xt1 12
+		print $ tx mobil1 2 0 20

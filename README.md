@@ -36,6 +36,7 @@ A movement can be defined with the functions mru and mrua, the former being a sh
 * mrua x0 v0 a t0
 * mru x0 v0 t0
 It uses Haskell's guard pattern, and must take time as an argument:
+
 ```haskell
 movement t
     | t < 5 = mrua 2 (-5) 3 0
